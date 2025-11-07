@@ -1,0 +1,43 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="115" fill="url(#gradient)"/>
+
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Stylized "S" letter made of stacked tabs -->
+  <g filter="url(#glow)">
+    <!-- Top curve of S (multiple tabs stacked) -->
+    <path d="M 180 180 L 332 180 C 360 180 380 200 380 228 C 380 256 360 276 332 276 L 260 276"
+          stroke="white"
+          stroke-width="48"
+          stroke-linecap="round"
+          fill="none"
+          opacity="0.95"/>
+
+    <!-- Bottom curve of S -->
+    <path d="M 252 236 L 180 236 C 152 236 132 256 132 284 C 132 312 152 332 180 332 L 332 332"
+          stroke="white"
+          stroke-width="48"
+          stroke-linecap="round"
+          fill="none"
+          opacity="0.95"/>
+
+    <!-- Small bookmark accent -->
+    <path d="M 340 300 L 340 370 L 320 355 L 300 370 L 300 300 Z"
+          fill="white"
+          opacity="0.9"/>
+  </g>
+</svg>

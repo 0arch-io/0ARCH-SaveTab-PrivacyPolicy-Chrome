@@ -1,0 +1,44 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with gradient -->
+  <rect width="128" height="128" rx="28" fill="url(#gradient)"/>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Stack of tabs icon -->
+  <!-- Back tab -->
+  <rect x="30" y="45" width="68" height="48" rx="6" fill="white" opacity="0.2" filter="url(#glow)"/>
+
+  <!-- Middle tab -->
+  <rect x="26" y="38" width="68" height="48" rx="6" fill="white" opacity="0.4" filter="url(#glow)"/>
+
+  <!-- Front tab with bookmark/save icon -->
+  <rect x="22" y="31" width="68" height="48" rx="6" fill="white" filter="url(#glow)"/>
+
+  <!-- Bookmark/Save icon in center -->
+  <path d="M64 50 L64 66 L56 62 L48 66 L48 50 C48 48.8954 48.8954 48 50 48 L62 48 C63.1046 48 64 48.8954 64 50Z"
+        fill="#3B82F6"
+        stroke="#3B82F6"
+        stroke-width="2"
+        stroke-linejoin="round"/>
+
+  <!-- Small accent dots indicating multiple items -->
+  <circle cx="78" cy="68" r="3" fill="#10B981" filter="url(#glow)"/>
+  <circle cx="88" cy="68" r="3" fill="#F59E0B" filter="url(#glow)"/>
+  <circle cx="98" cy="68" r="3" fill="#EF4444" filter="url(#glow)"/>
+</svg>

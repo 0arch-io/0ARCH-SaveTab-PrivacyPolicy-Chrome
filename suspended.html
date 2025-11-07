@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Sleeping</title>
+  <link rel="stylesheet" href="suspended.css">
+</head>
+<body>
+  <div class="suspended-container">
+    <div class="suspended-card">
+      <div class="suspended-icon">
+        <img id="favicon" src="" alt="" class="favicon" />
+      </div>
+
+      <h1 id="title" class="suspended-title">Loading...</h1>
+
+      <div class="suspended-message">
+        <p class="message-main">This tab is sleeping to save memory</p>
+        <p class="message-sub">Click anywhere to wake it up</p>
+      </div>
+
+      <div class="memory-saved">
+        <span class="memory-text">~100 MB saved</span>
+      </div>
+
+      <button id="wakeButton" class="wake-button">
+        Wake Tab
+      </button>
+
+      <div class="suspended-url">
+        <span id="url">about:blank</span>
+      </div>
+    </div>
+
+    <div class="background-gradient"></div>
+  </div>
+
+  <script src="suspended.js"></script>
+</body>
+</html>
