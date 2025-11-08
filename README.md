@@ -1,143 +1,88 @@
-# SaveTab - Chrome Extension
+# Privacy Policy for SaveTab
 
-A powerful and beautiful tab management extension for Chrome that helps you organize, save, and restore your browsing sessions.
+**Last Updated:** November 6, 2025
 
-## Features
+## Overview
 
-- **Tab Collections**: Save and restore groups of tabs with one click
-- **Smart Workspaces**: Organize collections into different contexts
-- **AI Smart Grouping**: Use Google Gemini AI to automatically categorize tabs
-- **Tab Suspender**: Automatically suspend inactive tabs to save memory
-- **Beautiful UI**: Ultra-modern dark theme with customizable colors
-- **Privacy First**: All data stored locally, no tracking
+SaveTab is committed to protecting your privacy. This privacy policy explains how our Chrome extension handles your data.
 
-## Installation
+## Data Collection
 
-### From Chrome Web Store
-1. Visit the [SaveTab Chrome Web Store page](#) (link coming soon)
-2. Click "Add to Chrome"
-3. Start organizing your tabs!
+SaveTab does **NOT** collect, transmit, or share any personal information. All data is stored locally on your device using Chrome's storage API.
 
-### Manual Installation (Development)
-1. Clone this repository
-2. Open Chrome and go to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked"
-5. Select the `savetab-extension` folder
-6. The extension is now installed!
+### What Data We Store Locally
 
-## Usage
+- **Tab Collections**: URLs, titles, and favicons of tabs you save
+- **Workspaces**: Custom workspace names and associated tab collections
+- **Settings**: Your preferences for tab suspension, sorting, and UI customization
+- **Gemini API Key** (Optional): If you choose to use AI features, your API key is stored locally and encrypted
 
-### Quick Start
-1. Click the SaveTab icon or press `Ctrl+Shift+S` to open the side panel
-2. Click "Save Current Tabs" to create a collection
-3. Give your collection a name
-4. Your tabs are saved! You can now close them to free up memory
-5. Click "Open All" on any collection to restore those tabs
+## Data Usage
 
-### Workspaces
-- Switch between different contexts (Work, Personal, Research)
-- Each workspace has its own collections
-- Click "Create Workspace" to add a new one
-- Right-click workspace cards for options
+All data stored by SaveTab is used exclusively for:
+- Saving and restoring your tab collections
+- Managing workspaces and organizing tabs
+- Providing tab suspension functionality
+- Customizing the extension appearance
+- Enabling AI-powered smart grouping (only if you provide an API key)
 
-### AI Smart Grouping
-1. Go to Settings tab
-2. Enter your [Google Gemini API key](https://aistudio.google.com/app/apikey) (free)
-3. Go to Workspaces tab
-4. Click "AI Smart Group" to automatically organize your tabs
+## Data Sharing
 
-### Tab Suspension
-1. Go to Settings tab
-2. Enable "Auto-suspend tabs"
-3. Set your preferred suspension delay
-4. Inactive tabs will automatically suspend to save memory
-5. Click suspended tabs to wake them instantly
+SaveTab does **NOT**:
+- Send your data to any external servers (except when using optional AI features)
+- Share your data with third parties
+- Track your browsing activity
+- Collect analytics or telemetry
 
-### Customization
-1. Click the customize button on any collection
-2. Choose custom colors for the collection
-3. Or use preset color schemes
-4. Go to Customize tab for global theme settings
+## Optional AI Features
 
-## Privacy
+If you choose to use AI-powered features (Smart Grouping):
+- You must provide your own Google Gemini API key
+- Your tab data (URLs and titles) will be sent to Google's Gemini API for processing
+- This data is only sent when you explicitly click "AI Smart Group"
+- We do not store or log any data sent to the Gemini API
+- Please review [Google's Privacy Policy](https://policies.google.com/privacy) for how they handle API requests
 
-SaveTab respects your privacy:
-- All data is stored locally using Chrome's storage API
-- No external servers or tracking (except optional AI features)
+## Data Security
+
+- All data is stored locally using Chrome's secure storage API
 - API keys are encrypted before storage
-- No analytics or telemetry
-- See [PRIVACY.md](PRIVACY.md) for full details
+- No data is transmitted to external servers (except optional AI features as described above)
 
-## Development
+## Data Control
 
-### Project Structure
-```
-savetab-extension/
-├── manifest.json          # Extension manifest
-├── popup.html            # Main UI
-├── popup.js              # Main logic
-├── workspace.js          # Workspace & AI features
-├── customize.js          # Customization logic
-├── background.js         # Background service worker
-├── suspended.html        # Tab suspension page
-├── suspended.js          # Suspension logic
-├── styles-dark.css       # Main stylesheet
-├── icons/                # Extension icons
-│   ├── icon-16.png
-│   ├── icon-48.png
-│   └── icon-128.png
-└── *.svg                 # Source icon files
-```
+You have complete control over your data:
+- **Export**: Export your collections at any time from the Settings tab
+- **Delete**: Clear individual collections, workspaces, or all data
+- **Remove**: Uninstalling the extension removes all locally stored data
 
-### Building
-
-No build step required. The extension runs directly from source files.
-
-### Contributing
-
-Contributions are welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## Requirements
-
-- Chrome version 89 or higher (for Tab Groups API support)
-- Optional: Google Gemini API key for AI features
-
-## Keyboard Shortcuts
-
-- `Ctrl+Shift+S` (Windows/Linux) or `Cmd+Shift+S` (Mac): Open SaveTab side panel
-
-## Permissions Explained
+## Permissions Explanation
 
 SaveTab requires the following permissions:
 
 - **tabs**: To save and restore your tab collections
-- **storage**: To save collections and settings locally
-- **alarms**: For automatic tab suspension scheduling
+- **storage**: To save your collections, settings, and preferences locally
+- **alarms**: To enable automatic tab suspension features
 - **tabGroups**: To organize tabs into visual groups
-- **sidePanel**: To display the extension interface
+- **sidePanel**: To display the extension interface in Chrome's side panel
 
-## Support
+## Children's Privacy
 
-- [Report Issues](https://github.com/yourusername/savetab-extension/issues)
-- [Privacy Policy](PRIVACY.md)
-- [Chrome Web Store Page](#)
+SaveTab does not knowingly collect any information from children under 13 years of age.
 
-## License
+## Changes to This Policy
 
-[Your chosen license - MIT recommended]
+We may update this privacy policy from time to time. Any changes will be reflected in the "Last Updated" date at the top of this document.
 
-## Credits
+## Contact
 
-Made with care for productive browsing.
+If you have questions about this privacy policy, please contact us at:
+- GitHub Issues: [github.com/yourusername/savetab-extension/issues](https://github.com/yourusername/savetab-extension/issues)
 
-Icons based on [Feather Icons](https://feathericons.com/)
+## Your Consent
+
+By using SaveTab, you consent to this privacy policy.
 
 ---
 
-**Version 2.0.0** - Complete redesign with modern UI, AI features, and enhanced functionality
+**Summary**: SaveTab keeps all your data private and local. We don't collect, transmit, or share anything unless you explicitly use optional AI features with your own API key.
